@@ -123,7 +123,7 @@ PublicKey.fromPoint = function(point) {
     @arg {string} [pubkey_prefix = 'EOS'] - public key prefix
     @return PublicKey or `null` (invalid)
 */
-PublicKey.fromString = function(public_key, pubkey_prefix = 'TELOS') {
+PublicKey.fromString = function(public_key, pubkey_prefix = 'TLOS') {
     try {
         return PublicKey.fromStringOrThrow(public_key, pubkey_prefix)
     } catch (e) {
@@ -139,7 +139,7 @@ PublicKey.fromString = function(public_key, pubkey_prefix = 'TELOS') {
 
     @return PublicKey
 */
-PublicKey.fromStringOrThrow = function(public_key, pubkey_prefix = 'TELOS') {
+PublicKey.fromStringOrThrow = function(public_key, pubkey_prefix = 'TLOS') {
     assert.equal(typeof public_key, 'string', 'public_key')
     const match = public_key.match(/^PUB_([A-Za-z0-9]+)_([A-Za-z0-9]+)$/)
     if(match === null) {
