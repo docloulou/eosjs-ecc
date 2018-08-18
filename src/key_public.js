@@ -47,7 +47,7 @@ function PublicKey(Q) {
     /** @todo rename to toStringLegacy
      * @arg {string} [pubkey_prefix = 'EOS'] - public key prefix
     */
-    function toString(pubkey_prefix = 'TELOS') {
+    function toString(pubkey_prefix = 'TLOS') {
       return pubkey_prefix + keyUtils.checkEncode(toBuffer())
     }
 
