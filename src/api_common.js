@@ -71,7 +71,7 @@ ecc.randomKey().then(privateKey => {
 
         @example ecc.privateToPublic(wif) === pubkey
     */
-    privateToPublic: (wif, pubkey_prefix = 'TELOS') => PrivateKey(wif).toPublic().toString(pubkey_prefix),
+    privateToPublic: (wif, pubkey_prefix = 'TLOS') => PrivateKey(wif).toPublic().toString(pubkey_prefix),
 
     /**
         @arg {pubkey} pubkey - like EOSKey..
